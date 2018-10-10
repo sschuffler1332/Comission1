@@ -18,13 +18,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateOnTapped(_ sender: UIButton) {
-        getInput()
+        let comPay = getInput()
+        let totalPay = comPay + Double(basePay)
+        TotalPayLabel.text = "Total Pay = $\(totalPay)"
     }
-    func getInput(){
-        if let data = commissionPayTextField.text, let commissionPay = Int(data){
-            print("everything is fine")
+    func getInput() -> Double
+    {
+        if let data = commissionPayTextField.text, let commissionPay = Double(data){
+            return commissionPay
         } else {
-            print("error occured")
+            return 0
         }
     }
 }
