@@ -71,7 +71,7 @@
                     </view>
                     <connections>
                         <outlet property="TotalPayLabel" destination="voa-3p-Gkc" id="GiP-jJ-nwK"/>
-                        <outlet property="comissionPayTextField" destination="bd3-Y4-iVf" id="gLm-kI-e8b"/>
+                        <outlet property="commissionPayTextField" destination="bd3-Y4-iVf" id="Zmz-vp-gVQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
