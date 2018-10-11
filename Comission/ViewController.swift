@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBAction func calculateOnTapped(_ sender: UIButton) {
         let comPay = getInput()
         let totalPay = comPay + Double(basePay)
+        let formattedPay = String(format: "%.2f", totalPay)
         TotalPayLabel.text = "Total Pay = $\(totalPay)"
     }
     func getInput() -> Double
